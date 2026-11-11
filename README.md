@@ -2,13 +2,10 @@
 
 Root-controlled web console for a Linux deployment/tools server.
 
-## Install on Ubuntu/Debian
+## One-line install (Ubuntu/Debian)
 
 ```bash
-sudo apt-get update && sudo apt-get install -y git
-git clone https://github.com/vibhvesh/canberra-deployment-centre.git
-cd canberra-deployment-centre
-sudo bash install.sh
+curl -fsSL https://raw.githubusercontent.com/vibhvesh/canberra-deployment-centre/main/install.sh | sudo bash
 ```
 
 Open `http://SERVER_IP:1101`. The installer generates a strong root-console password and prints it once. It is stored in `/etc/canberra/console.env` with mode 600.
